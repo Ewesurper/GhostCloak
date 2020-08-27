@@ -1,10 +1,10 @@
 /*
 Name: GhostCloak.cpp
-Purpose: XOR raw shellcode.
+Purpose: XOR raw shellcode using C++
 Date Built: 12 MAY 2020
 Date Last Modified: 8 JUNE 2020
 Created By: Ewesurper
-Special thanks to: Z3R0th
+Special thanks to: Z3R0th and Disc0rdantMel0dy
 */
 
 //Includes
@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 	//First Round key
 	//This vector stores your first secret key
 	//This is the key that will be used to XOR your shellcode
-	std::vector<uint8_t> frk = { 'H', 'e', '1', 'L', 'd', 'i', 'v', 'E', 'r', '0', 'f', 'L', 'y', 'k', 'o', 's'};
+	std::vector<uint8_t> frk = { 'H', 'e', 'l', 'l', 'D', 'i', 'v', 'e', 'r', 'o', 'f', 'L', 'y', 'k', 'o', 's'};
 
 	//Read argument[1] as Binary
 	std::ifstream ReadFile(argv[1], std::ios::in | std::ios::binary);
